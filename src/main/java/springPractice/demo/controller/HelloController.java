@@ -18,7 +18,7 @@ public class HelloController {
     }
 
     @ResponseBody
-     @GetMapping("hello-string")
+     @GetMapping("/hello-string")
     public String helloString(@RequestParam String name) {
         return "hello " + name; // 문자가 view 없이 그대로 전송 -plain text
     }
